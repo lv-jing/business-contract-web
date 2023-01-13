@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>伊利合同管理系统</title>
+  <style>
+  </style>
+</head>
+
+<body>
+    <script>
+        var obj = window.location.href.split("?");
+        var host = obj[0].replace("index1.html","index.html");
+        var param = obj[1];
+        var url = "";
+        if(host.indexOf("#")>0){
+            url = host+"?"+param;
+        }else{
+            url = host + "#/iWebOffice?"+param;
+        }
+        window.location.href = url;
+    </script>
+</body>
+
+</html>
+
